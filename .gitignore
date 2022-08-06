@@ -1,0 +1,30 @@
+# Dependency directories
+node_modules/
+
+# dotenv environment variables file
+.env
+
+# build
+lib/
+
+# Jest cache
+.jest-cache
+
+# macOS
+.DS_Store
+
+# Coverage
+.nyc_output/
+coverage/
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+.vscode
+dist

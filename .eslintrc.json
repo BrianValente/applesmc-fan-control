@@ -1,0 +1,42 @@
+{
+  "env": {
+    "browser": false,
+    "es2021": true
+  },
+  "extends": [
+    "airbnb-base",
+    "airbnb-typescript/base"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "import/prefer-default-export": "off",
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          ["builtin", "external"]
+        ],
+        "newlines-between": "always"
+      }
+    ],
+    "semi": "off",
+    "@typescript-eslint/member-delimiter-style": ["error", {
+      "multiline": {
+        "delimiter": "semi",
+        "requireLast": true
+      },
+      "singleline": {
+        "delimiter": "semi",
+        "requireLast": false
+      }
+    }],
+    "@typescript-eslint/semi": ["error"],
+    "no-console": ["off"],
+    "@typescript-eslint/type-annotation-spacing": "error",
+    "@typescript-eslint/indent": ["error", 2, { "SwitchCase": 1, "ignoredNodes": ["PropertyDefinition"] }],
+    "@typescript-eslint/consistent-type-imports": ["error"],
+    "@typescript-eslint/consistent-type-definitions": ["error", "type"]
+  }
+}

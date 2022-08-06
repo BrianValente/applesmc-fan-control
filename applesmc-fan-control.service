@@ -1,0 +1,8 @@
+[Unit]
+Description=Fan control
+
+[Service]
+ExecStart=/path/to/applesmc-fan-control
+
+[Install]
+WantedBy=multi-user.target
